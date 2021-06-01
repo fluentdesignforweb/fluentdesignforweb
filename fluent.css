@@ -252,7 +252,6 @@ nav{
     right: 0px;
     bottom: 0px;
     padding: 2%;
-    background-image: url('./gausian_blur.png');
     overflow-y: auto;
 }
 
@@ -347,20 +346,6 @@ nav .nav_content{
 .zi3:hover{box-shadow:  6px 0 12px 0 rgba(0, 0, 0, 0.4), 0 4px 12px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
 .zi4:hover{box-shadow:  12px 0 24px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
 
-/*Colors*/
-.transparent{background: transparent; color:#232323;}
-.primary_blue{background: #0065AF; color:#FFF;}
-.primary_green{background: #28B85B; color:#FFF;}
-.primary_red{background: #cc2936; color:#FFF;}
-.primary_yellow{background: #c8c800; color:#1A1A1A;}
-.primary_inverted{background: #1E1E1E; color:#FFF;}
-.primary_white{background: #FCFCFC; color: #232323;}
-.primary_blue_title{background: linear-gradient(to bottom right, #08415CCC , #16B9DDCC 70%); color:#FFF;}
-/*repeating-linear-gradient(45deg, #16B9DD 50px, #0094DD 60px)*/
-
-.secondary_blue{background: #06A7DD; color:#FFF;}
-.secondary_green{background: #06A77D; color:#FFF;}
-.secondary_red{background: #DE1738; color:#FFF;}
 
 /*Controls*/
 
@@ -789,7 +774,6 @@ th:hover{opacity: 0.8;}
     margin: 4px;
 }
 .modal_container{
-    background-image: url('./gausian_blur.png');
     backdrop-filter: blur(10px);
     display: none;
     position: fixed;
@@ -812,7 +796,6 @@ th:hover{opacity: 0.8;}
 }
 .modal_container::-webkit-scrollbar{display: none;}
 .sidepanel_container{
-    background-image: url('./gausian_blur.png');
     position: fixed;
     top:0;
     bottom:0;
@@ -905,7 +888,6 @@ img{width: 100%; height: auto;}
     right: 0;
     top:0;
     bottom: 0;
-    background-image: url('./gausian_blur.png');
     color: #FFF;
     transition: 300ms;
 }
@@ -1092,6 +1074,27 @@ img.square{
     height: 200dp;
     width: 200dp;
 }
+
+
+/*Colors*/
+
+/*Set every color to auto, override any previous coloring attempt*/
+*{background-color: auto; color: auto;}
+
+/*Set colors now*/
+.transparent{background-color: transparent; color:#232323;}
+.primary_blue{background-color: #0065AF; color:#FFF;}
+.primary_green{background-color: #28B85B; color:#FFF;}
+.primary_red{background-color: #cc2936; color:#FFF;}
+.primary_yellow{background-color: #c8c800; color:#1A1A1A;}
+.primary_inverted{background-color: #1E1E1E; color:#FFF;}
+.primary_white{background-color: #FCFCFC; color: #232323;}
+.primary_blue_title{background-color: linear-gradient(to bottom right, #08415CCC , #16B9DDCC 70%); color:#FFF;}
+/*repeating-linear-gradient(45deg, #16B9DD 50px, #0094DD 60px)*/
+
+.secondary_blue{background-color: #06A7DD; color:#FFF;}
+.secondary_green{background-color: #06A77D; color:#FFF;}
+.secondary_red{background-color: #DE1738; color:#FFF;}
 
 
 
