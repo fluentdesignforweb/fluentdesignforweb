@@ -9,16 +9,145 @@
     <link rel="manifest" href="site.webmanifest">  
     <link rel="apple-touch-icon" href="icon.png">  
 
-    <link rel="stylesheet" href="https://fluentdesignforweb.github.io/v2/fluent-core.css">  
+    <link rel="stylesheet" href="./v2/fluent-core.css">  
     <link rel="stylesheet" href="https://fluentdesignforweb.github.io/v2/fluent-icons.css">  
 
     <meta name="theme-color" content="#fafafa">  
-  </head>  
-  <body>  
 
-    <div class="column large6 medium6 small6 primary_blue">
+    <style>
+      .hero{
+        background: radial-gradient(circle at bottom left, #00a07a, transparent),
+                    radial-gradient(circle at top right, #00ffea, transparent),
+                    radial-gradient(circle at bottom, #00607a, transparent)
+        ;
+        min-height: 74vh;
+        color: #fafafa;
+        width: 100%;
+      }
+      .hero h1{font-size: 8vh;}
+      footer{
+        background: radial-gradient(circle at top left, #faccca, transparent),
+                    radial-gradient(circle at bottom right, #fafacc, transparent),
+                    radial-gradient(circle at top, #faffaf, transparent)
+        ;
+        color: #1e1e1e;
+        padding: 20px 0px;
+      }
+      .version{font-size: 1.6vh; padding: 4px 8px;}
+      .button_group{
+        width: 337px;
+        margin: auto;
+      }
+      .footerTitle{
+        font-size: 14px;
+        font-weight: bold;
+        color: inherit;
+        margin-bottom: 16px;
+      }
+      .footerLink{
+        color: inherit;
+      }
+      .footerLink a{
+        color: inherit;
+        font-size: 16px;
+        font-weight: 400;
+        display: block;
+        line-height: 1;
+      }
+      footer hr{border: none; height: 1px; background-color: #1e1e1e; margin: auto;}
+    </style>
+  </head>  
+  <body>
+
+    <div class="column lg-9 md-9 sm-9 hero">
+      <br/>
+      <div class="lg-7 md-9 sm-9 center">
+        <a href="https://fluentdesignforweb.github.io"><img src="./static/logo.png" style="width: 48px;" ></a>
+        <a href="#" class="pivot_button right">Star on GitHub</a>
+      </div>
+      <br/><br/><br/><br/>
       
+      <div class="column lg-6 md-9 sm-9 center">
+        <button class="primary_inverted center version">2.0.0</button>
+        <h1 class="ta_center">Fluent Design for Web</h1>
+        <h2 class="ta_center"> Native Experience on Web</h2>
+        <br/><br/>
+        <div class="button_group sm-0">
+          <a href="#bottom"><button class="frost_container primary_blue" onmouseover="frosting()">  
+            <span class="frost">Choose your path</span>
+          </button></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://www.npmjs.com/package/fdweb"><button class="frost_container secondary_blue" onmouseover="frosting()">  
+            <span class="frost">Installation Guide</span>
+          </button></a>  
+        </div>
+        <div class="lg-0 md-0">
+          <a href="#bottom" class="frost_container primary_blue center ta_center" onmouseover="frosting()">  
+            <span class="frost">Choose your path</span>
+          </a>
+          <br/>
+          <a href="https://www.npmjs.com/package/fdweb" class="frost_container secondary_blue center ta_center" onmouseover="frosting()">  
+            <span class="frost">Installation Guide</span>
+          </a>  
+        </div>
+      </div>
+      <br/><br/><br/><br/>      
     </div>
+
+    <div class="column lg-9 md-9 sm-9 center">
+      <br/><br/>
+      <span id="bottom"></span>
+      <h1 class="ta_center">Select one of the major versions</h1>
+      <div class="column lg-4 md-4 sm-9">
+        <a href="./v1/index.html">
+          <img src="./static/blob-v1.png" alt="fdweb1"/>
+          <h2 class="ta_center">Legacy (For projects based on v1)</h2>  
+        </a>
+      </div>
+      <div class="column lg-1 md-1 sm-0"></div>
+      <div class="column lg-4 md-4 sm-9">
+        <a href="./v2/index.html">
+          <img src="./static/blob-v2.png" alt="fdweb2"/>
+          <h2 class="ta_center">Current (For new/existing projects)</h2>  
+        </a>
+      </div>
+      <br/><br/>
+    </div>
+
+    <footer>
+      <div class="column lg-3 md-3 sm-9">
+        <p class="ta_center footerTitle">GitHub Actions</p>
+        <p class="ta_center footerLink">
+          <a href="#">Submit an Issue</a>
+          <a href="#">Star on Github</a>
+          <a href="#">Fork on Github</a>
+        </p>
+      </div>
+
+      <div class="column lg-3 md-3 sm-9">
+        <p class="ta_center footerTitle">Important Links</p>
+        <p class="ta_center footerLink">
+          <a href="./v1/index.html">Docs 1.x</a>
+          <a href="./v2/index.html">Docs 2.x</a>
+          <a href="https://www.npmjs.com/package/fdweb">Installation</a>
+        </p>
+      </div>
+
+      <div class="column lg-3 md-3 sm-9">
+        <p class="ta_center footerTitle">Featured Projects</p>
+        <p class="ta_center footerLink">
+          <a href="https://shivendrasaurav.github.io/corona-rakshak/">Corona Rakshak</a>
+          <a href="https://hisabkitabapp.herokuapp.com/">Hisab Kitab</a>
+          <a href="https://revahack.com/">REVA HACK 2021</a>
+        </p>
+      </div>
+      <div class="column lg-7 md-7 sm-9 center">
+        <hr/>
+        <p>Free and Open Source</p>
+      </div>
+
+
+    </footer>
 
       <script src="https://fluentdesignforweb.github.io/v2/fluent-scripts.js" type="text/javascript"></script>  
   </body>  
